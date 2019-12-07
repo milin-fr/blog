@@ -21,4 +21,5 @@
 </head>
 <body>
   <header>
+  <img id="dragon_logo" src="./images/dragon.png" alt="">
   </header>

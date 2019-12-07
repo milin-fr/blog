@@ -9,6 +9,16 @@ body::before {
   z-index: 100;
 }
 
+#dragon_logo {
+  z-index: 100;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+}
+
 .main__container {
   max-width: 1200px;
   margin: auto;
@@ -114,11 +124,14 @@ Carousel
   .card {
     height: 80vh;
   }
-}
-
-@media (min-width: 1000px) {
   body {
     background-size: 100%;
+  }
+  #dragon_logo {
+    left: 20px;
+    top: 20px;
+    height: 100px;
+    width: auto;
   }
 }
 
