@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150360782-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-150360782-2');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Réflexions, inspirations, articles et points de vue sur la société et sur des thèmes dont le dragon est le symbole : féminité, intuition, sens artistique, ..." />
+  {% block stylesheets %}<link rel="stylesheet" href="./style.css">{% endblock %}
+  <link rel="icon" href="./images/favicon.ico" />
+  <title>{% block title %}Le dragon philosophe{% endblock %}</title>
+</head>
+<body>
+  <header>
+  <img id="dragon_logo" src="./images/dragon.png" alt="">
+  </header>
+{% block body %}{% endblock %}
+<footer>
+  <!--
+  <div class="row justify-content-center text-center">
+    <div class="col-6 social-networks">
+
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+        <li class="list-inline-item"><a href="#"><i class="fa fa-github-square"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row justify-content-center text-center">
+    <div class="col-9 links">
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">LIEN 1</a></li>
+        <li class="list-inline-item"><a href="#">LIEN 2</a></li>
+        <li class="list-inline-item"><a href="#">LIEN 3</a></li>
+      </ul>
+    </div>
+  </div>
+  -->
+</footer>
+</div>
+{% block javascripts %}<script src="carousel.js"></script>{% endblock %}
+</body>
 </html>
